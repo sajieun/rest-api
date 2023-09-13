@@ -26,6 +26,7 @@ public class VDATest {
         sum = sum +5;
         System.out.println("sum = " + sum);
 
+
 //        3. 내가 한 방식
         int x = 10;
         int y = 20;
