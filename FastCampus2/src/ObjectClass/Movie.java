@@ -6,6 +6,7 @@ public class Movie {
     public String bestmember;
     public String genre;
     public int time;
-    public String age;
+    public int age;
+
 
 }
