@@ -8,6 +8,6 @@ public class MovieTest {
         v.bestmember="me";
         v.genre="romance";
         v.time=124;
-        v.age="17age";
+        v.age=17;
     }
 }
