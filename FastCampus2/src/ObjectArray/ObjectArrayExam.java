@@ -29,5 +29,9 @@ public class ObjectArrayExam {
         m[2].genre="romance";
         m[2].time=124;
         m[2].age=17;
+
+        for (int i=0;i<m.length;i++){
+            System.out.println(m[i].name+"\t"+m[i].open+"\t"+m[i].bestmember+"\t"+m[i].genre+"\t"+m[i].time+"\t"+m[i].age+"\t");
+        }
     }
 }
