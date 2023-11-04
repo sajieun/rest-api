@@ -1,4 +1,4 @@
-package Fastcam.part3.ClassDTO;
+package ClassDTO;
 
 public class MovieDTO {
     public String title;
