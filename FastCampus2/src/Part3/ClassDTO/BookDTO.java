@@ -1,4 +1,4 @@
-package ClassDTO;
+package Part3.ClassDTO;
 
 public class BookDTO {
     public String titie;

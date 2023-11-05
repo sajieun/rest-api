@@ -1,4 +1,4 @@
-package ClassDTO;
+package Part3.ClassDTO;
 
 public class PersonTest {
     public static void main(String[] args) {
