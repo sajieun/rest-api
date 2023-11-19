@@ -1,10 +1,12 @@
 package Part3.ClassDTO;
 
 import Part3.model.CarDTO;
+import Part3.model.CarDAO;
+import Part3.model.CarUtiliy;
 
 import java.util.Scanner;
 
-public class CarTest {
+public class CarInsertTest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("자동차일년번호:");
@@ -34,13 +36,11 @@ public class CarTest {
         car.carPrice=carPrice;
         car.carOwner=carOwner;
         car.carYear=carYear;
-        carInfoPrint(car);
 
-    }
-//    public void carInfoPrint(int carSn, String carName, int carPrice,int carOwner,int carYear){
-//
-//    }
-    public static void carInfoPrint(CarDTO carDTO){
-        System.out.println(carDTO.carSn+carDTO.carName+ carDTO.carPrice+ carDTO.carOwner+ carDTO.carYear);
+        CarUtiliy carUtil=new CarUtiliy();
+        carUtil.carPrint(car);
+//        CarDAO dao = new CarDAO();
+//        dao.carInsert(car); //car에 들어가는것들 다 저장이 됨
+//        dao.carSelect();
     }
 }

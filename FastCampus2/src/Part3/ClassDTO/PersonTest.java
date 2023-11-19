@@ -17,5 +17,8 @@ public class PersonTest {
         System.out.println(p.name);
         System.out.println(p.age);
         System.out.println(p.phone);
+        p.play();
+        p.eat();
+        p.walk();
     }
 }
