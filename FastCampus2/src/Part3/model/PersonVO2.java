@@ -1,7 +1,7 @@
 package Part3.model;
 
 public class PersonVO2 {
-    private String name;
+    public String name;
     private int age;
     private String phone;
 
