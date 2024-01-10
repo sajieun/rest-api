@@ -1,11 +1,19 @@
 package Part4;
 // 사원
 public class Employee {
-    protected String name;
-    protected int age;
-    protected String phone;
-    protected String dept;
-    protected boolean marriage;
+    private String name;
+    private int age;
+    private String phone;
+    private String dept;
+    private boolean marriage;
+
+    public Employee(String name, int age, String phone, String dept, boolean marriage) {
+        this.name = name;
+        this.age = age;
+        this.phone = phone;
+        this.dept = dept;
+        this.marriage = marriage;
+    }
 
     public Employee(){
         super(); // 상위클래스의 생성자를 호출 -> new Object() 생략 가능
