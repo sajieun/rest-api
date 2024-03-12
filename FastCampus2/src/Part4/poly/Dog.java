@@ -1,4 +1,4 @@
-package Part4.model;
+package Part4.poly;
 
 public class Dog extends Animal {
     @Override

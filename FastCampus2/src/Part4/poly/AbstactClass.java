@@ -1,13 +1,13 @@
-package Part4.model;
+package Part4.poly;
 
-public class DogCatUpcastingTest {
+public class AbstactClass {
     public static void main(String[] args) {
         Animal ani = new Dog();
         ani.eat();
-        ani.night();
+        ((Dog)ani).night();
 
         ani = new Cat();
         ani.eat();
-        ani.night();
+        ((Cat)ani).night();
     }
 }
