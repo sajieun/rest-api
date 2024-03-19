@@ -18,8 +18,8 @@ public class StringCompare {
         if (result ==0){
             System.out.println("같음");
         } else if (result <0) {
-            System.out.println("str3이 str4보다 앞에 있습니다.");
-        }else System.out.println("str3이 str4보다 뒤에 있습니다.");
+            System.out.println(str3+str4);
+        }else System.out.println(str4+str3);
 
     }
 }
