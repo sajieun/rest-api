@@ -21,5 +21,17 @@ public class MovieListExample {
             System.out.printf("|%-16s|%-8s|%6d|%-6s|\n",movie.getTitle(),movie.getDirector(),movie.getYear(),movie.getCounty());
         }
 
+        String searchTitle = "기생충";
+        for (Movie m : movieList){
+            if (m.getTitle().equals(searchTitle)){
+                System.out.println(m);
+                System.out.println(m.getTitle());
+                System.out.println(m.getDirector());
+                System.out.println(m.getYear());
+                System.out.println(m.getCounty());
+                break;
+            }
+        }
+
     }
 }
