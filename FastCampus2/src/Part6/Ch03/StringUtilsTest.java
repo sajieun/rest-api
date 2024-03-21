@@ -1,5 +1,7 @@
 package Part6.Ch03;
 
+import Part6.Ch03.model.Converter;
+
 public class StringUtilsTest {
     public static void main(String[] args) {
         StringUtils stringUtils = new StringUtils();

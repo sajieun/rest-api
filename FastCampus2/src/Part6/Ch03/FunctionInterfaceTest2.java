@@ -1,5 +1,7 @@
 package Part6.Ch03;
 
+import Part6.Ch03.model.MathOperation;
+
 public class FunctionInterfaceTest2 {
     public static void main(String[] args) {
 //        MathOperation 인터페이스를 내부 익명클래스로 구현

@@ -1,5 +1,7 @@
 package Part6.Ch03;
 
+import Part6.Ch03.model.MathOperation;
+
 public class FunctionInterfaceTest implements MathOperation {
     public static void main(String[] args) {
         MathOperation mo = new FunctionInterfaceTest();

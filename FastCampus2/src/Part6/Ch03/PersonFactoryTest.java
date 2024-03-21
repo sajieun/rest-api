@@ -1,6 +1,7 @@
 package Part6.Ch03;
 
 import Part5.model.Person;
+import Part6.Ch03.model.PersonFactory;
 
 public class PersonFactoryTest {
     public static void main(String[] args) {

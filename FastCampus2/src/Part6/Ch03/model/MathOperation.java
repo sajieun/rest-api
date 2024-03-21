@@ -1,4 +1,4 @@
-package Part6.Ch03;
+package Part6.Ch03.model;
 
 @FunctionalInterface // 함수형 인터페이스
 public interface MathOperation {

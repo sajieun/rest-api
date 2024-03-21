@@ -1,6 +1,8 @@
 package Part6.Ch03;
 
 import Part5.model.Person;
+import Part6.Ch03.model.Converter;
+import Part6.Ch03.model.PersonFactory;
 
 public class IntergerUtilsTest {
     public static void main(String[] args) {

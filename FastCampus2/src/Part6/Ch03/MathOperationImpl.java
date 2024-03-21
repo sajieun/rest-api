@@ -1,6 +1,8 @@
 package Part6.Ch03;
 
-public class MathOperationImpl implements MathOperation{
+import Part6.Ch03.model.MathOperation;
+
+public class MathOperationImpl implements MathOperation {
 
 
     @Override

@@ -1,4 +1,4 @@
-package Part6.Ch03;
+package Part6.Ch03.model;
 
 import Part5.model.Person;
 
