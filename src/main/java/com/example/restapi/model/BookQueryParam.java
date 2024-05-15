@@ -11,6 +11,6 @@ import lombok.NoArgsConstructor;
 public class BookQueryParam {
     private String catagory;
     private String issuedYear;
-    private String issuedmonth;
-    private String issued_day;
+    private String issuedMonth;
+    private String issuedDay;
 }

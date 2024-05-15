@@ -41,7 +41,8 @@ public class RestApiController {
     }
 
 //    객체를 통해 파싱
-//    http://localhost:8080/api/book2?catagory=IT&issuedYear=2023&issued-month=01&issued_day=31
+//    http://localhost:8080/api/book2?catagory=IT&issuedYear=2023&issuedMonth=01&issuedDay=31 이렇게 하면 - _ 있는 애들이 안 읽혀짐
+//    자바 규칙에 맞게 http://localhost:8080/api/book2?catagory=IT&issuedYear=2023&issuedMonth=01&issuedDay=31 이렇게 설정
     @GetMapping(path = "/book2")
     public void queryParamDto(
             BookQueryParam bookQueryParam
