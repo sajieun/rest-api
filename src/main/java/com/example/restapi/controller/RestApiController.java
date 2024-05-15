@@ -1,9 +1,6 @@
 package com.example.restapi.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
@@ -15,7 +12,7 @@ public class RestApiController {
         return html;
     }
 
-    //http://localhost:8080/api/echo/안녕하세요/number/12/is-man/false
+    //http://localhost:8080/api/echo/hello/number/12/is-man/false
     @GetMapping(path = "/echo/{message}/number/{number}/is-man/{isMan}")
     public String echo(
             @PathVariable String message, // 만약 이름을 갖게 하고 싶지 않으면
@@ -26,5 +23,19 @@ public class RestApiController {
         System.out.println("echo message : "+message + number + isMan);
         // 대문자로 변환해서 RETURN
         return message.toUpperCase()+number+isMan;
+    }
+
+//    http://localhost:8080/api/book?catagory=IT&issuedYear=2023&issued-month=01&issued_day=31
+    @GetMapping(path = "/book")
+    public void queryParam(
+            @RequestParam String catagory,
+            @RequestParam String issuedYear,
+            @RequestParam(name = "issued-month") String issuedmonth,
+            @RequestParam String issued_day
+    ){
+        System.out.println(catagory);
+        System.out.println(issuedYear);
+        System.out.println(issuedmonth);
+        System.out.println(issued_day);
     }
 }
