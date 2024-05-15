@@ -15,12 +15,16 @@ public class RestApiController {
         return html;
     }
 
-    @GetMapping(path = "/echo/{message}")
+    //http://localhost:8080/api/echo/안녕하세요/number/12/is-man/false
+    @GetMapping(path = "/echo/{message}/number/{number}/is-man/{isMan}")
     public String echo(
-            @PathVariable String message
+            @PathVariable String message, // 만약 이름을 갖게 하고 싶지 않으면
+            @PathVariable int number,
+            @PathVariable boolean isMan
+//          @PathVariable(name = "message") String msg 이렇게 설정해 주면 된다.
     ){
-        System.out.println("echo message : "+message);
+        System.out.println("echo message : "+message + number + isMan);
         // 대문자로 변환해서 RETURN
-        return message.toUpperCase();
+        return message.toUpperCase()+number+isMan;
     }
 }
