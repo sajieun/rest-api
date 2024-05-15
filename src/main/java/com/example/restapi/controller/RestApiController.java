@@ -50,4 +50,20 @@ public class RestApiController {
         System.out.println(bookQueryParam);
     }
 
+    // 파라미터 2가지 int형태로 받아서 곱셈, 덧셈 하기
+    @GetMapping(path = "math/num1/{num1}/num2/{num2}")
+    public String math(
+            @PathVariable int num1,
+            @PathVariable int num2
+
+    ){
+        var sum = num1 + num2;
+        var product = num1 * num2;
+        System.out.println("덧셈 :" + sum);
+        System.out.println("곱셈 :" + product);
+        var total = "덧셈 : " + sum + " 곱셈은 : " + product;
+        return total;
+    }
+
+
 }
